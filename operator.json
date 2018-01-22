@@ -1,0 +1,10 @@
+{
+  "name": "Linear mixed model",
+  "description": " Perform linear mixed effects analyses",
+  "tags": [""],
+  "authors": ["tercen"],
+  "urls": ["https://github.com/tercen/mixed_model_operator"],
+  "properties": []
+}
+
+
