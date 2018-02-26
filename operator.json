@@ -1,10 +1,23 @@
 {
   "name": "Linear mixed model",
-  "description": " Perform linear mixed effects analyses",
+  "description": "Perform linear mixed effects analyses",
   "tags": [""],
   "authors": ["tercen"],
   "urls": ["https://github.com/tercen/mixed_model_operator"],
-  "properties": []
+  "properties": [
+    {
+    "kind": "FormulaProperty",
+    "name": "model",
+    "defaultValue": "",
+    "description": "A two-sided linear formula object describing both the fixed-effects and random-effects part of the model, with the response on the left of a ~ operator and the terms, separated by + operators, on the right. Random-effects terms are distinguished by vertical bars (|) separating expressions for design matrices from grouping factors. Two vertical bars (||) can be used to specify multiple uncorrelated random effects for the same grouping variable"
+  },
+  {
+    "kind": "FormulaProperty",
+    "name": "null.model",
+    "defaultValue": "",
+    "description": "A two-sided linear formula object describing both the fixed-effects and random-effects part of the model, with the response on the left of a ~ operator and the terms, separated by + operators, on the right. Random-effects terms are distinguished by vertical bars (|) separating expressions for design matrices from grouping factors. Two vertical bars (||) can be used to specify multiple uncorrelated random effects for the same grouping variable"
+  }
+  ]
 }
 
 
