@@ -42,8 +42,8 @@ Requires: Rcpp, bindr, plogr
 
 Package: broom
 Source: CRAN
-Version: 0.4.3
-Hash: e796a434d80c7358cb3eb5acb142fb45
+Version: 0.4.4
+Hash: dc14fe971ee0fdd4e22b5b1d11611a37
 Requires: dplyr, plyr, psych, reshape2, stringr, tidyr
 
 Package: cli
@@ -87,8 +87,8 @@ Hash: 9c51936d8dd00b2f1d4fe9d10499694c
 
 Package: lme4
 Source: CRAN
-Version: 1.1-15
-Hash: d92dee423bbcfc83c6c6e7a857291739
+Version: 1.1-17
+Hash: c6017a0af6a3738bb54306e9e40e4cd5
 Requires: Rcpp, RcppEigen, minqa, nloptr
 
 Package: magrittr
@@ -114,12 +114,12 @@ Hash: d0d5efbb1fb26d2dc5f9394c223084b5
 
 Package: nloptr
 Source: github
-Version: 1.1.0
-Hash: 69fbeb2204852bd7782c0af26751b427
+Version: 1.1.9
+Hash: bbe719037ce80009fd0e6ab41734f1e1
 GithubRepo: nloptr
 GithubUsername: jyypma
 GithubRef: master
-GithubSha1: eecb1aa3c65b55f039f34385c71655ea8801cbdb
+GithubSha1: 8d5f62a1d2e2db8c62810f8462cc7fe72de8945c
 
 Package: openssl
 Source: CRAN
