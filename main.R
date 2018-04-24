@@ -85,7 +85,7 @@ if (length(models$fixed.effects) > 0){
 
 data = data %>% rename_(.dots=setNames(list('.y','.x'),
                                        list(paste(ctx$yAxis, collapse = '_'),
-                                            ctx$xAxis)))
+                                            ctx$xAxis[[0]])))
 
 result.list = data %>%
   group_by(.ri) %>%
@@ -117,7 +117,8 @@ formula.table = tibble(model=c('model','null.model'),
                        formula=c(paste(as.character(models$model)[c(2,1,3)], collapse = " "),
                                  paste(as.character(models$null.model)[c(2,1,3)], collapse = " ")))
 
-list(formula.table %>% ctx$addNamespace(),
+list(
+     # formula.table %>% ctx$addNamespace(),
      pv.table %>% ctx$addNamespace(),
      summary.table %>% ctx$addNamespace(),
      res.table %>% ctx$addNamespace()) %>%
