@@ -82,10 +82,10 @@ if (length(models$fixed.effects) > 0){
   data = ctx$select(unlist(list('.ri', '.y', '.x', models$labels, models$colors)))
   
 }
-
+ 
 data = data %>% rename_(.dots=setNames(list('.y','.x'),
                                        list(paste(ctx$yAxis, collapse = '_'),
-                                            ctx$xAxis[[0]])))
+                                            ctx$xAxis[[1]])))
 
 result.list = data %>%
   group_by(.ri) %>%
