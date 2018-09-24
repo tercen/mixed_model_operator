@@ -3,9 +3,13 @@
 ## Crosstab to model
 
 Y ==> Response
+
 X ==> Effect under study
+
 Column ==> Fixed effects
+
 Label ==> Random intercept/slope effects
+
 Color ==> Random intercept effects
 
 A crosstab projection is translated into R formula :
