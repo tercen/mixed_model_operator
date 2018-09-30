@@ -1,14 +1,13 @@
 # mixed model operator
 
 #### Description
-`hclust` operator performs the SOM (self organizing maps) in the `hclust` from base R.
+mixed model modelling of input data.
 
 ##### Usage
 Input projection|.
 ---|---
 `col`   | fixed effects
-`row`   | represents the col data
-`y-axis`| response
+`y-axis`| response data
 `x-axis`| effect under study
 `label` | random intercept/slope effects
 `color` | random intercept effects
@@ -21,9 +20,9 @@ Input parameters|.
 
 Output relations|.
 ---|---
-`pv`| numeric, pvalue
-`results`| numeric
-`residual`| numeric, residual
+`pv`| numeric, Chisq, pvalue
+`results`| numeric list of results
+`residual`| numeric, residual per fitted data point
 
 ##### Details
 
@@ -33,7 +32,7 @@ Y ~ X + Column + (1 + X | Label) + (1 | Color)
 The  model is fitted on each Row factor defined in the crosstab projection.
 
 #### References
-see the `base::hclust` function of the R package for the documentation, 
+see the `base:lmer` function of the R package for the documentation, 
 
 
 ##### See Also
